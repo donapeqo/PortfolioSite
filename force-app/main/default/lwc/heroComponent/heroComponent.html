@@ -1,13 +1,17 @@
 <template>
-    <div class="container">
-        <img src={imageURL} alt="">
-    </div>
-   
-  
-  
-    <div class="callToAction container">
+  <div class="container">
+    <img src={imageURL} alt="" />
+  </div>
+
+  <div class="callToAction container">
     <h1>My name is Luqman Nor</h1>
     <p>Let's do business together!</p>
-    <button>Contact Me</button>
-    </div>
+    <!-- <button onclick={handleClick}>Contact Me</button> -->
+    <lightning-button
+      onclick={handleClick}
+      aria-haspopup="dialog"
+      label="Lets connect!"
+    >
+    </lightning-button>
+  </div>
 </template>
